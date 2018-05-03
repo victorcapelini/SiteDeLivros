@@ -1,5 +1,4 @@
 <html>
-
 <body>
     <table>
         <tr>
@@ -11,23 +10,13 @@
         <tr>
             <%for(var i=0;i<lista.length;i++) {%>
                 <tr>
-                    <td>
-                        <%=lista[i].id%>
-                    </td>
-                    <td>
-                        <%=lista[i].titulo%>
-                    </td>
-                    <td>
-                        <%=lista[i].descricao%>
-                    </td>
-                    <td>
-                        <%=lista[i].preco%>
-                    </td>
+                    <td><%=lista[i].id%></td>
+                    <td><%=lista[i].titulo%></td>
+                    <td><%=lista[i].descricao%></td>
+                    <td><%=lista[i].preco%></td>
                 </tr>
                 <%}%>
-
         </tr>
     </table>
 </body>
-
 </html>
