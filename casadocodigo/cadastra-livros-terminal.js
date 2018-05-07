@@ -3,17 +3,17 @@ var http = require('http');
 var configuracoes = {
     hostname: 'localhost',
     port: 3000,
-    method: 'post',
     path: '/produtos',
+    method: 'post',
     headers: {
         'Accept': 'application/json',
-        'Content-type': 'application/json'
+        'Content-type':'application/json'
     }
 };
 
-var client = http.request(configuracoes, function (res) {
+var client = http.request(configuracoes, function(res) {
     console.log(res.statusCode);
-    res.on('data', function (body) {
+    res.on('data', function(body) {
         console.log('Corpo: ' + body);
     });
 });
